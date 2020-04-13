@@ -2,6 +2,7 @@ html, body {
   font-family: 'Barlow', sans-serif;
   color: #fff;
   background-color: #12212e; 
+  height: 100%;
 }
 
 a {
@@ -25,6 +26,10 @@ p {
   line-height: 32px;
 }
 
+.jumbotron {
+  background-color: transparent;
+}
+
 .logo {
   max-width: 400px;
   display: block;
@@ -35,9 +40,10 @@ p {
 .bg {
   height: 100%;
   margin: 0;
-  background-image: url("./img/bg.png");
+  background-color: #12212e; 
+  background-image: url("./img/bg.jpg");
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
   resize: both;
   padding-top: 0rem;
   padding-bottom: 0rem;
