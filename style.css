@@ -1,8 +1,21 @@
 html, body {
   font-family: 'Barlow', sans-serif;
-  color: #fff;
-  background-color: #12212e; 
+}
+
+html {
   height: 100%;
+  background-color: #12212e; 
+  background: url("./img/bg.jpg") no-repeat center center fixed; 
+  background-position-y: -200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  color: #fff;
+  background-color: transparent;
 }
 
 a {
@@ -33,21 +46,14 @@ p {
 .logo {
   max-width: 400px;
   display: block;
-  margin: 15rem auto 4rem auto;
+  margin: 12rem auto 4rem auto;
   padding: 0 1rem;
 }
 
-.bg {
-  height: 100%;
-  margin: 0;
-  background-color: #12212e; 
-  background-image: url("./img/bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  resize: both;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  border-radius: 0;
+@media screen and (max-width: 1250px) {
+  html {
+    background-position-y: 0;
+  }
 }
 
 @media screen and (max-width: 525px) {
