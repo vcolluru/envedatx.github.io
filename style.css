@@ -1,12 +1,12 @@
 html, body {
   font-family: 'Barlow', sans-serif;
+  background-color: #12212e;
+  color: #fff;
 }
 
 html {
   height: 100%;
-  background-color: #12212e; 
-  background: url("./img/bg.jpg") no-repeat center center fixed; 
-  background-position-y: -200px;
+  background: url("./img/bg.gif") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,8 +14,7 @@ html {
 }
 
 body {
-  color: #fff;
-  background-color: rgba(18, 33, 46, 0.4);
+  background: transparent;
 }
 
 a {
@@ -28,6 +27,14 @@ a:hover {
 
 p {
   margin: 3rem 0;
+}
+
+.background-overlay {
+  background-color: rgba(18, 33, 46, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 .content {
@@ -44,12 +51,14 @@ p {
 
 .jumbotron {
   background-color: transparent;
+  background-color: rgba(18, 33, 46, 0.5);
+  margin-bottom: 0;
 }
 
 .logo {
   max-width: 400px;
   display: block;
-  margin: 12rem auto 4rem auto;
+  margin: 8rem auto 4rem auto;
   padding: 0 1rem;
 }
 
