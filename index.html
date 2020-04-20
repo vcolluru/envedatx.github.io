@@ -28,6 +28,10 @@
     <![endif]-->
   </head>
   <body>
+    <div class="background-overlay"></div>
+    <video class="lazy background-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" data-src="img/bg.mp4" data-poster="img/bg.jpg">
+      <source type="video/mp4" data-src="img/bg.mp4" />
+    </video>
     <div class="jumbotron d-flex align-items-center">
       <div class="container main">
         <img class="img-fluid logo" src="./img/logo-vertical.png"/>
@@ -45,11 +49,11 @@
             interface of knowledge engineering, unbiased biology, and cutting-edge metabolomics.
             If this sounds like you, please drop us a <a href="https://forms.gle/HimGzNi2RMMRHTiy8" target="_blank">note</a>.
           </p>
-          <p class="footer">Pictured is a small subset of Enveda's Network Medicine dataset. (c) Enveda Therapeutics, Inc. 2020.</p>
+          <p class="footer">Pictured is a small subset of Enveda's Network Medicine dataset. &copy; Enveda Therapeutics, Inc. 2020.</p>
         </div>
       </div>
     </div>
-    <div class="background-overlay"></div>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163947736-1"></script>
     <script>
@@ -60,6 +64,13 @@
       gtag('config', 'UA-163947736-1');
     </script>
     <script src="//code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@15.1.1/dist/lazyload.min.js"></script>
     <script src="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script>
+    var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+        // ... more custom settings?
+    });
+  </script>
   </body>
 </html>
