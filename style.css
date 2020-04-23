@@ -67,9 +67,9 @@ body .container {
 }
 
 .footer {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
   padding-top: 1rem;
+  color: #f7941d;
 }
 
 .jumbotron {
