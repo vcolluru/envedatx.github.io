@@ -37,11 +37,13 @@ p {
   transform: translateX(-50%) translateY(-50%);
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 body .container {
   position: relative;
   z-index: 2;
+  overflow: hidden;
 }
 
 .background-overlay {
@@ -52,6 +54,7 @@ body .container {
   width: 100%;
   background-color: rgba(18, 33, 46, 0.5);
   z-index: 1;
+  overflow: hidden;
 }
 
 .content {
@@ -60,6 +63,7 @@ body .container {
   max-width: 800px;
   font-size: 18px;
   line-height: 32px;
+  overflow: hidden;
 }
 
 .content p {
@@ -75,6 +79,7 @@ body .container {
 .jumbotron {
   background-color: transparent;
   margin-bottom: 0;
+  overflow: hidden;
 }
 
 .logo {
